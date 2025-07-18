@@ -13,7 +13,7 @@ function App() {
       <Bio /> */}
       <Greeting name='henri' />
       <Greeting name='Miessan' />
-      <Profile />
+      <Profile imageUrl='../public/profilepic.jpg' altText='my doctor ' />
       <AgeCard name='Miesan' age={30} />
     </>
   );
