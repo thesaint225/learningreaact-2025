@@ -1,4 +1,5 @@
 import './App.css';
+import AgeCard from './components/AgeCard';
 import Greeting from './components/greeting';
 import Profile from './components/profile';
 
@@ -13,6 +14,7 @@ function App() {
       <Greeting name='henri' />
       <Greeting name='Miessan' />
       <Profile />
+      <AgeCard name='Miesan' age={30} />
     </>
   );
 }
