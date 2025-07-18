@@ -4,6 +4,8 @@ import AgeCard from './components/AgeCard';
 import Greeting from './components/greeting';
 import Profile from './components/profile';
 import UseCard from './components/UseCard';
+import UserEmail from './components/UserEmail';
+import WelcomeMessage from './components/WelcomeMessage';
 import CustomButton from './CustomButton';
 import LoginStatus from './LoginStatus';
 import UserInfo from './UserInfo';
@@ -34,6 +36,8 @@ function App() {
       <AlertButton label='click me' onclick={handleClick} />
       <UserInfo {...user} />
       <LoginStatus isLoggedIn={true} />
+      <WelcomeMessage isLoggedIn={true} />
+      <UserEmail hasEmail={true} />
     </>
   );
 }
