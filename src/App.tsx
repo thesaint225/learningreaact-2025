@@ -1,7 +1,9 @@
 import AlertButton from './AlertButton';
 import './App.css';
+import ActionButton from './components/ActionButton';
 import AgeCard from './components/AgeCard';
 import Greeting from './components/greeting';
+import Notification from './components/Notification';
 import Profile from './components/profile';
 import UseCard from './components/UseCard';
 import UserEmail from './components/UserEmail';
@@ -38,6 +40,8 @@ function App() {
       <LoginStatus isLoggedIn={true} />
       <WelcomeMessage isLoggedIn={true} />
       <UserEmail hasEmail={true} />
+      <ActionButton IsSubmitted={true} />
+      <Notification count={2} />
     </>
   );
 }
