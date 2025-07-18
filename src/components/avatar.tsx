@@ -1,9 +1,15 @@
-export default function Avatar() {
-  const avatar = 'https://i.imgur.com/7vQD0fPs.jpg';
-  const description = 'Gregorio Y. Zara';
+function Avatar() {
   return (
-    <div>
-      <img src={avatar} alt={description} />
-    </div>
+    <img
+      className='avatar'
+      src='https://i.imgur.com/1bX5QH6.jpg'
+      alt='Lin Lanying'
+      width={100}
+      height={100}
+    />
   );
+}
+
+export default function Profile() {
+  return <Avatar />;
 }
