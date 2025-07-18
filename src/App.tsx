@@ -1,3 +1,4 @@
+import AlertButton from './AlertButton';
 import './App.css';
 import AgeCard from './components/AgeCard';
 import Greeting from './components/greeting';
@@ -6,6 +7,9 @@ import UseCard from './components/UseCard';
 import CustomButton from './CustomButton';
 
 function App() {
+  function handleClick() {
+    alert('button click');
+  }
   return (
     <>
       {/* <Home />
@@ -19,6 +23,7 @@ function App() {
       <AgeCard name='Miesan' age={30} />
       <UseCard name='Miessan' age={30} location='Accra' />
       <CustomButton label='submit' />
+      <AlertButton label='click me' henri={handleClick} />
     </>
   );
 }
