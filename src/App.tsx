@@ -1,5 +1,6 @@
 import AlertButton from './AlertButton';
 import './App.css';
+import AccountStatus from './components/AccountStatus';
 import ActionButton from './components/ActionButton';
 import AgeCard from './components/AgeCard';
 import Greeting from './components/greeting';
@@ -8,6 +9,7 @@ import Profile from './components/profile';
 import UseCard from './components/UseCard';
 import UserBadge from './components/UserBadge';
 import UserEmail from './components/UserEmail';
+import UserNames from './components/UserNames';
 import WelcomeMessage from './components/WelcomeMessage';
 import CustomButton from './CustomButton';
 import LoginStatus from './LoginStatus';
@@ -44,6 +46,8 @@ function App() {
       <ActionButton IsSubmitted={true} />
       <Notification count={2} />
       <UserBadge name='Henri' isAdmin={true} isBanned={false} />
+      <AccountStatus username='john' isActive={false} />
+      <UserNames />
     </>
   );
 }
