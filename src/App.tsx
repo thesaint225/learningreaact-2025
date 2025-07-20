@@ -6,6 +6,7 @@ import Greeting from './components/greeting';
 import Notification from './components/Notification';
 import Profile from './components/profile';
 import UseCard from './components/UseCard';
+import UserBadge from './components/UserBadge';
 import UserEmail from './components/UserEmail';
 import WelcomeMessage from './components/WelcomeMessage';
 import CustomButton from './CustomButton';
@@ -42,6 +43,7 @@ function App() {
       <UserEmail hasEmail={true} />
       <ActionButton IsSubmitted={true} />
       <Notification count={2} />
+      <UserBadge name='Henri' isAdmin={true} isBanned={false} />
     </>
   );
 }
