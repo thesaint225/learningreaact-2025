@@ -3,6 +3,8 @@ import './App.css';
 import AccountStatus from './components/AccountStatus';
 import ActionButton from './components/ActionButton';
 import AgeCard from './components/AgeCard';
+import ConditionalIcon from './components/ConditionalIcon';
+import FilterPeople from './components/FilterPeople';
 import Greeting from './components/greeting';
 import Notification from './components/Notification';
 import Profile from './components/profile';
@@ -10,6 +12,7 @@ import UseCard from './components/UseCard';
 import UserBadge from './components/UserBadge';
 import UserEmail from './components/UserEmail';
 import UserNames from './components/UserNames';
+import UserProffesion from './components/UserProffesion';
 import WelcomeMessage from './components/WelcomeMessage';
 import CustomButton from './CustomButton';
 import LoginStatus from './LoginStatus';
@@ -35,7 +38,7 @@ function App() {
       {/* <Greeting name='henri' />
       <Greeting name='Miessan' />
       <Profile imageUrl='../public/profilepic.jpg' altText='my doctor ' /> */}
-      <AgeCard name='Miesan' age={30} />
+      {/* <AgeCard name='Miesan' age={30} />
       <UseCard name='Miessan' age={30} location='Accra' />
       <CustomButton label='submit' />
       <AlertButton label='click me' onclick={handleClick} />
@@ -48,6 +51,10 @@ function App() {
       <UserBadge name='Henri' isAdmin={true} isBanned={false} />
       <AccountStatus username='john' isActive={false} />
       <UserNames />
+      <UserProffesion /> */}
+      <FilterPeople />
+      <ConditionalIcon />
+      <UserProffesion />
     </>
   );
 }
